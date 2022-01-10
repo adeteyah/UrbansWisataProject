@@ -1,0 +1,9 @@
+
+z
+java:S1450"_Remove the "exploreViewModel" field and declare it as a local variable in the relevant methods.(Ι¥σωÿÿÿÿ
+U
+java:S1161":Add the "@Override" annotation above this method signature(ÿ£Ί΅ÿÿÿÿÿ
+O
+java:S1068"4Remove this unused "exploreViewModel" private field.(Ι¥σωÿÿÿÿ
+w
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "root".(φ±ξϊÿÿÿÿ

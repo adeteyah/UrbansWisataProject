@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "563188098451",
+    "firebase_url": "https://urbanswisata-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "urbanswisata",
+    "storage_bucket": "urbanswisata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563188098451:android:673f00efbd5806e924f466",
+        "android_client_info": {
+          "package_name": "com.dt.urbanswisata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563188098451-4jtq1nrt1pnca4jrvmrn8g6jh4jda1hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dt.urbanswisata",
+            "certificate_hash": "7e19dc4ab3585f2c04931ff7eac7056cc0714360"
+          }
+        },
+        {
+          "client_id": "563188098451-13mq3756kr1odlpb2kt03l8pruggtbeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAZUTBqTSGX4yw3eOfSnUmBoMvsP8l6yQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563188098451-13mq3756kr1odlpb2kt03l8pruggtbeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

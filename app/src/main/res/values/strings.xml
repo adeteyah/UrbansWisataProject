@@ -1,0 +1,32 @@
+<resources>
+    <!-- Basic -->
+    <string name="app_name">Urbans Wisata</string>
+    <!-- Menu -->
+    <string name="nav_1">Dashboard</string>
+    <string name="nav_2">Explore</string>
+    <string name="nav_3">Notif</string>
+    <string name="nav_4">Me</string>
+    <!-- Onboard -->
+    <string name="onboard_lead">We knows what’s cooking in town!</string>
+    <string name="onboard_description">Improve your discovery experiences through the community.</string>
+    <string name="onboard_button">Login with Google Account</string>
+    <!-- Sign Up -->
+    <!-- Login -->
+    <string name="login_input_email_or_username">Email or Username</string>
+    <string name="login_input_password">Password</string>
+    <string name="login_button_login">Login</string>
+    <!-- Profile -->
+    <string name="profile_title">John Doe</string>
+    <!-- Leagues -->
+    <string name="gmap_api">AIzaSyBhCLvUWZ-P9ybfwHlwDY0hbEeDglv7Z6A</string>
+    <!-- Placeholder -->
+    <string name="placeholder_description">Lorem ipsum dolor sit asmet</string>
+
+    <string name="clientId" translatable="false">563188098451-13mq3756kr1odlpb2kt03l8pruggtbeo.apps.googleusercontent.com</string>
+    <string name="msg_error">Sorry, we can\'t execute your request right now</string>
+    
+    <string-array name="event_types">
+        <item>Free</item>
+        <item>Paid</item>
+    </string-array>
+</resources>

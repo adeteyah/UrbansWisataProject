@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- basis -->
+
+    <style name="Theme.DT.DayNight" parent="Theme.DT">
+        <item name="colorSecondary">@color/secondary_night</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant_night</item>
+        <item name="colorOnSecondary">@color/color_on_secondary_night</item>
+        <item name="android:statusBarColor" tools:targetApi="23">@color/background_status_night
+        </item>
+        <item name="android:windowBackground">@color/background_night</item>
+        <item name="android:navigationBarColor">@color/background_nav_night</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+    </style>
+
+    <!-- text -->
+
+    <style name="Theme.DT.Text">
+        <item name="android:textColor">@color/text_on_night</item>
+    </style>
+
+    <style name="Theme.DT.Text.Display1" parent="Theme.DT.Text">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Theme.DT.Text.Display2" parent="Theme.DT.Text">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+
+</resources>

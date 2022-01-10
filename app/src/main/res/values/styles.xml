@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- basis -->
+
+    <style name="Theme.DT" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+    </style>
+
+    <style name="Theme.DT.Window.Translucent" parent="Theme.DT.DayNight">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Theme.DT.SearchBar" parent="Theme.DT.DayNight">
+        <item name="android:fontFamily">@font/inter_light</item>
+    </style>
+
+    <style name="Theme.DT.Text.Onboard1" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/inter_extrabold</item>
+        <item name="android:textColor">@color/text_on_night</item>
+        <item name="android:alpha">0.90</item>
+    </style>
+
+    <style name="Theme.DT.Text.Onboard2" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_on_night</item>
+        <item name="android:alpha">0.65</item>
+    </style>
+</resources>
