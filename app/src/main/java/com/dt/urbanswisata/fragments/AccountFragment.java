@@ -22,11 +22,14 @@ import com.google.firebase.auth.FirebaseAuth;
 public class AccountFragment extends Fragment {
 
     private Intent i;
-    private AccountViewModel mdl;
+    private AccountViewModel accountViewModel;
     private FragmentAccountBinding b;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(
+            @NonNull LayoutInflater inflater,
+            @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
         b = FragmentAccountBinding.inflate(getLayoutInflater());
         b.btnLogout.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
@@ -35,5 +38,9 @@ public class AccountFragment extends Fragment {
         });
         return b.getRoot();
     }
-
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        b = null;
+    }
 }

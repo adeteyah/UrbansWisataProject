@@ -15,20 +15,23 @@ import com.dt.urbanswisata.models.NotificationViewModel;
 public class NotificationFragment extends Fragment {
 
     private NotificationViewModel notificationViewModel;
-    private FragmentNotificationBinding binding;
+    private FragmentNotificationBinding b;
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(
+            @NonNull LayoutInflater inflater,
+            ViewGroup container,
+            Bundle savedInstanceState) {
         notificationViewModel = new ViewModelProvider(this).get(NotificationViewModel.class);
 
-        binding = FragmentNotificationBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-        
+        b = FragmentNotificationBinding.inflate(getLayoutInflater());
+        View root = b.getRoot();
+
         return root;
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+        b = null;
     }
 }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_explore">
+    app:startDestination="@id/navigation_dashboard">
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -16,7 +16,6 @@
         android:name="com.dt.urbanswisata.fragments.ExploreFragment"
         android:label="@string/nav_2"
         tools:layout="@layout/fragment_explore" />
-
 
     <fragment
         android:id="@+id/navigation_notification"

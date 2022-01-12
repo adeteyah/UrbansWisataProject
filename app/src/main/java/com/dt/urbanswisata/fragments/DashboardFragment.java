@@ -12,27 +12,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dt.urbanswisata.R;
+import com.dt.urbanswisata.databinding.FragmentDashboardBinding;
 import com.dt.urbanswisata.models.DashboardViewModel;
 
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel mViewModel;
-
-    public static DashboardFragment newInstance() {
-        return new DashboardFragment();
-    }
+    private FragmentDashboardBinding b;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dashboard, container, false);
-    }
+    public View onCreateView(
+            @NonNull LayoutInflater inflater,
+            @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
+        b = FragmentDashboardBinding.inflate(getLayoutInflater());
+        //
 
+        //
+        return b.getRoot();
+    }
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(DashboardViewModel.class);
+    public void onDestroyView() {
+        super.onDestroyView();
+        b = null;
     }
-
 }

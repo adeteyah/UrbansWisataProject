@@ -15,22 +15,25 @@ import com.dt.urbanswisata.models.ExploreViewModel;
 public class ExploreFragment extends Fragment {
 
     private ExploreViewModel exploreViewModel;
-    private FragmentExploreBinding binding;
+    private FragmentExploreBinding b;
 
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(
+            @NonNull LayoutInflater inflater,
+            ViewGroup container,
+            Bundle savedInstanceState) {
 
         exploreViewModel = new ViewModelProvider(this).get(ExploreViewModel.class);
 
-        binding = FragmentExploreBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        b = FragmentExploreBinding.inflate(getLayoutInflater());
+        View v = b.getRoot();
 
-        return root;
+        return v;
 
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+        b = null;
     }
 }

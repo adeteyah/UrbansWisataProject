@@ -24,7 +24,7 @@
 
     <string name="clientId" translatable="false">563188098451-13mq3756kr1odlpb2kt03l8pruggtbeo.apps.googleusercontent.com</string>
     <string name="msg_error">Sorry, we can\'t execute your request right now</string>
-    
+
     <string-array name="event_types">
         <item>Free</item>
         <item>Paid</item>
