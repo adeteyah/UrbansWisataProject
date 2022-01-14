@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MapAddActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?android:statusBarColor"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/horizontal_m"
+        android:paddingVertical="@dimen/vertical_m">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_bar_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search place..."
+            map:placeholderText="Alun-Alun Bandung">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:statusBarColor"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_search"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_bar_container"
+            android:text="Search" />
+
+    </LinearLayout>
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab_get_my_location"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/top_layout_container"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginHorizontal="@dimen/horizontal_m"-->
+    <!--        android:layout_marginVertical="@dimen/vertical_m"-->
+    <!--        android:src="@drawable/ic_round_my_location_24" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:navigationBarColor"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/horizontal_m"
+        android:paddingVertical="@dimen/vertical_m">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_select"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select" />
+
+    </LinearLayout>
+
+</RelativeLayout>

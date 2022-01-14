@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.NotificationFragment">
+    tools:context=".fragments.MainNotificationFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +65,6 @@
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/ic_round_rate_review_24"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:text="Give Review"

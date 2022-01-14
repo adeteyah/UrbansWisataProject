@@ -7,26 +7,26 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.dt.urbanswisata.fragments.DashboardFragment"
+        android:name="com.dt.urbanswisata.fragments.MainDashboardFragment"
         android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_main_dashboard" />
 
     <fragment
         android:id="@+id/navigation_explore"
-        android:name="com.dt.urbanswisata.fragments.ExploreFragment"
+        android:name="com.dt.urbanswisata.fragments.MainExploreFragment"
         android:label="@string/nav_2"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_main_explore" />
 
     <fragment
         android:id="@+id/navigation_notification"
-        android:name="com.dt.urbanswisata.fragments.NotificationFragment"
+        android:name="com.dt.urbanswisata.fragments.MainNotificationFragment"
         android:label="@string/nav_3"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/fragment_main_notification" />
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.dt.urbanswisata.fragments.AccountFragment"
+        android:name="com.dt.urbanswisata.fragments.MainAccountFragment"
         android:label="@string/nav_4"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_main_account" />
 
 </navigation>

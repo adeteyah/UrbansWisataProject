@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.dt.urbanswisata.R;
-import com.dt.urbanswisata.databinding.ActivityOnboardBinding;
+import com.dt.urbanswisata.databinding.ActivitySplashLoginBinding;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-public class OnboardActivity extends AppCompatActivity {
+public class SplashLoginActivity extends AppCompatActivity {
 
     private Intent i;
     private FirebaseAuth fa;
@@ -27,7 +27,7 @@ public class OnboardActivity extends AppCompatActivity {
     private AuthCredential ac;
     private GoogleSignInClient gsic;
     private GoogleSignInOptions gsio;
-    private ActivityOnboardBinding b;
+    private ActivitySplashLoginBinding b;
     private GoogleSignInAccount gsia;
     private Task<GoogleSignInAccount> t;
     private static final int RC_SIGN_IN = 123;
@@ -35,7 +35,7 @@ public class OnboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        b = ActivityOnboardBinding.inflate(getLayoutInflater());
+        b = ActivitySplashLoginBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
         myCode();
     }
@@ -64,7 +64,6 @@ public class OnboardActivity extends AppCompatActivity {
         gsic = GoogleSignIn
                 .getClient(this, gsio);
     }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

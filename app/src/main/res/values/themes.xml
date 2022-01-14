@@ -4,14 +4,12 @@
     <!-- basis -->
 
     <style name="Theme.DT.DayNight" parent="Theme.DT">
-        <item name="colorSecondary">@color/secondary_light</item>
-        <item name="colorSecondaryVariant">@color/secondary_variant_light</item>
-        <item name="colorOnSecondary">@color/color_on_secondary_light</item>
-        <item name="android:statusBarColor" tools:targetApi="23">@color/background_status_light
+        <item name="android:statusBarColor" tools:targetApi="23">
+            @color/background_status_light
         </item>
-        <item name="android:windowBackground">@color/background_light</item>
-        <item name="android:navigationBarColor">@color/background_nav_light</item>
         <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:navigationBarColor">@color/background_nav_light</item>
+        <item name="android:windowBackground">@color/background_light</item>
     </style>
 
     <!-- text -->

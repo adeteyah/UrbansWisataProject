@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="primary_variant">#dde392</color>
-    <color name="primary">#a1a975</color>
-    <color name="color_on_primary">#646f58</color>
+    <color name="primary">#606c38</color>
+    <color name="primary_variant">#7C8E42</color>
+    <color name="color_on_primary_light">#121212</color>
+    <color name="color_on_primary_night">#fefae0</color>
 
-    <color name="secondary_variant_light">#e5f4a8</color>
-    <color name="secondary_light">#c2d87e</color>
-    <color name="color_on_secondary_light">#606f49</color>
+    <color name="secondary">#bc6c25</color>
+    <color name="secondary_variant">#D37624</color>
+    <color name="color_on_secondary">#dda15e</color>
 
-    <color name="secondary_variant_night">#e0dfcb</color>
-    <color name="secondary_night">#d3c39e</color>
-    <color name="color_on_secondary_night">#787566</color>
+    <color name="text_on_light">#99000000</color>
+    <color name="text_on_night">#99FFFFFF</color>
 
-    <color name="text_on_light">#E6000000</color>
-    <color name="text_on_night">#E6FFFFFF</color>
+    <color name="background_status_light">#fff</color>
+    <color name="background_light">#F1F1F1</color>
+    <color name="background_nav_light">#fff</color>
 
-    <color name="background_status_light">#FEFEFF</color>
-    <color name="background_light">#f1f1f1</color>
-    <color name="background_nav_light">#f4f5f2</color>
-
-    <color name="background_status_night">#181818</color>
-    <color name="background_night">#121212</color>
-    <color name="background_nav_night">#0E1A16</color>
+    <color name="background_status_night">#121212</color>
+    <color name="background_night">#242424</color>
+    <color name="background_nav_night">#181818</color>
 
 </resources>

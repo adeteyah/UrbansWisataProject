@@ -1,7 +1,6 @@
 package com.dt.urbanswisata.fragments;
 
-import androidx.lifecycle.ViewModelProvider;
-
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,25 +11,31 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dt.urbanswisata.databinding.FragmentDashboardBinding;
+import com.dt.urbanswisata.activities.ComposeEventActivity;
+import com.dt.urbanswisata.databinding.FragmentMainDashboardBinding;
 import com.dt.urbanswisata.models.DashboardViewModel;
 
-public class DashboardFragment extends Fragment {
+public class MainDashboardFragment extends Fragment {
 
+    private Intent i;
+    private FragmentMainDashboardBinding b;
     private DashboardViewModel mViewModel;
-    private FragmentDashboardBinding b;
 
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater,
             @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        b = FragmentDashboardBinding.inflate(getLayoutInflater());
+        b = FragmentMainDashboardBinding.inflate(getLayoutInflater());
         //
-
+        b.btnNavigateToComposeActivity.setOnClickListener(v -> {
+            i = new Intent(getContext(), ComposeEventActivity.class);
+            startActivity(i);
+        });
         //
         return b.getRoot();
     }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();

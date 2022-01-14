@@ -1,16 +1,16 @@
 <resources>
 
-    <dimen name="horizontal_sm">8dp</dimen>
-    <dimen name="vertical_sm">12dp</dimen>
+    <dimen name="horizontal_sm">4dp</dimen>
+    <dimen name="vertical_sm">8dp</dimen>
 
-    <dimen name="horizontal_m">16dp</dimen>
-    <dimen name="vertical_m">20dp</dimen>
+    <dimen name="horizontal_m">12dp</dimen>
+    <dimen name="vertical_m">16dp</dimen>
 
-    <dimen name="horizontal_xl">24dp</dimen>
-    <dimen name="vertical_xl">28dp</dimen>
+    <dimen name="horizontal_xl">20dp</dimen>
+    <dimen name="vertical_xl">24dp</dimen>
 
-    <dimen name="corner_radius_square">2dp</dimen>
-    <dimen name="corner_radius_fab">8dp</dimen>
+    <dimen name="corner_radius_square">2.6dp</dimen>
+    <dimen name="corner_radius_fab">6dp</dimen>
     <dimen name="corner_radius_circle">999dp</dimen>
 
 </resources>

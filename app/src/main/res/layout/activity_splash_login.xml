@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.OnboardActivity">
+    tools:context=".activities.SplashLoginActivity">
 
     <ImageView
         android:id="@+id/imageview_onboard_background"

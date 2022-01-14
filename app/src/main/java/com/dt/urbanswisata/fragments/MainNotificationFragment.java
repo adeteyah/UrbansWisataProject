@@ -9,26 +9,24 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.dt.urbanswisata.databinding.FragmentExploreBinding;
-import com.dt.urbanswisata.models.ExploreViewModel;
+import com.dt.urbanswisata.databinding.FragmentMainNotificationBinding;
+import com.dt.urbanswisata.models.NotificationViewModel;
 
-public class ExploreFragment extends Fragment {
+public class MainNotificationFragment extends Fragment {
 
-    private ExploreViewModel exploreViewModel;
-    private FragmentExploreBinding b;
+    private NotificationViewModel notificationViewModel;
+    private FragmentMainNotificationBinding b;
 
     public View onCreateView(
             @NonNull LayoutInflater inflater,
             ViewGroup container,
             Bundle savedInstanceState) {
+        notificationViewModel = new ViewModelProvider(this).get(NotificationViewModel.class);
 
-        exploreViewModel = new ViewModelProvider(this).get(ExploreViewModel.class);
+        b = FragmentMainNotificationBinding.inflate(getLayoutInflater());
+        View root = b.getRoot();
 
-        b = FragmentExploreBinding.inflate(getLayoutInflater());
-        View v = b.getRoot();
-
-        return v;
-
+        return root;
     }
 
     @Override
